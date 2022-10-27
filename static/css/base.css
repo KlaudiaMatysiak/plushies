@@ -1,0 +1,14 @@
+body {
+    background-color: #F5FBFB;
+    /* #FFA258, #58bdcf, #A2E4E0, #F5FBFB; */
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-border {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #ebebeb;
+}
