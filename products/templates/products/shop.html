@@ -81,9 +81,18 @@
         </div>
     </div>
 </div>
+<div class="btn button-position btn-outline-dark rounded-4 py-2" id="button">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+</div>
 {% endblock %}
 {% block postloadjs %}
     {{ block.super }}
+    <script type="text/javascript">
+		$('#button').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
     <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);

@@ -12,3 +12,9 @@ body {
     border-width: 0 0 1px;
     border-color: #ebebeb;
 }
+
+.button-position {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
