@@ -7,7 +7,8 @@ from .models import Product, Category
 def shop(request):
     """ A view to show all the products in the shop"""
 
-    products = Product.objects.all()
+    products = Product.objects.distinct('name').order_by(
+        'products_product.name', 'price')
     query = None
     categories = None
     sort = None
@@ -57,9 +58,11 @@ def show_product(request, product_id):
     """ A view to show a product in details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    products = Product.objects.filter(name=product.name)
 
     context = {
         'product': product,
+        'products': products,
     }
 
     return render(request, 'products/show_product.html', context)
