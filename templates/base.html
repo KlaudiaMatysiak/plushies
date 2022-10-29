@@ -87,7 +87,7 @@
             <!-- User Account and Cart -->
             <ul class="navbar-nav mt-3 d-flex flex-row justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link p-2 {% if grand_total %}fw-bold{% endif %}" href="">
+                    <a class="nav-link p-2 {% if grand_total %}fw-bold{% endif %}" href="{% url 'view_cart' %}">
                         <div class="text-center">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <p class="my-0">
