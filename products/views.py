@@ -16,6 +16,7 @@ def shop(request):
 
     if request.GET:
         if 'sort' in request.GET:
+            products = Product.objects.all()
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
@@ -27,7 +28,8 @@ def shop(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)
+            products = products.filter(id__in=Product.objects.order_by(
+                'name', 'price').distinct('name')).order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
