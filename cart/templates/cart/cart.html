@@ -2,20 +2,44 @@
 {% load static %}
 
 {% block content %}
+<!-- Page title -->
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5 mb-5">
             <h1>Shopping Cart</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            {% if cart_items %}
-            {% else %}
-            <p class="mb-4">You cart is empty.</p>
-            <a href="{% url 'shop' %}" class="btn btn-outline-dark rounded-4 btn-lg">Keep shopping</a>
-            {% endif %}
-        </div>
-    </div>
 </div>
+<!-- Cart -->
+<div class="container">
+    <!-- Product/s in the cart -->
+    {% if cart_items %}
+    <div class="row">
+        <div class="col-12">
+            {% for item in cart_items %}
+            <div class="row">
+                <!-- Product image -->
+                <div class="col-4 col-lg-3 p-3">
+                    <img class="img-fluid" src="{{ MEDIA_URL }}{{ item.product.image }}" width="150">
+                </div>
+                <div class="col-8 col-lg-9 d-flex flex-column justify-content-center">
+                    <div class="row mt-2">
+                        <!-- Product name -->
+                        <div class="col align-items-center">
+                            <p class="m-0 fw-bold">{{ item.product.name }}</p>
+                            <p class="m-0 text-muted small">Size {{ item.product.size }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+        </div>
+    <!-- Empty cart -->
+    {% else %}
+        <p class="mb-4">You cart is empty.</p>
+        <a href="{% url 'shop' %}" class="btn btn-outline-dark rounded-4 btn-lg">Keep shopping</a>
+    {% endif %}
+</div>
+{% endblock %}
 {% endblock %}
