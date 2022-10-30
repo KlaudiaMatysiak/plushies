@@ -9,7 +9,13 @@
         </div>
     </div>
     <div class="row">
-        Test
+        <div class="col">
+            {% if cart_items %}
+            {% else %}
+            <p class="mb-4">You cart is empty.</p>
+            <a href="{% url 'shop' %}" class="btn btn-outline-dark rounded-4 btn-lg">Keep shopping</a>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% endblock %}
