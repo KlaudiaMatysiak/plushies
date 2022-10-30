@@ -29,6 +29,29 @@
                             <p class="m-0 fw-bold">{{ item.product.name }}</p>
                             <p class="m-0 text-muted small">Size {{ item.product.size }}</p>
                         </div>
+                        <div class="col-lg-4">
+                            <!-- Form to modify quantity -->
+                            <form class="form update-form" method="POST" action="{% url 'modify_cart' item.item_id %}">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <div class="input-group input-group-{{ item.item_id }}">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-outline-dark border-4 decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                                <i class="fa-solid fa-circle-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input class="form-control form-control-sm qty_input border-0 fs-5 px-1 text-center id_qty_{{ item.item_id }}" type="number" name="quantity"
+                                            value="{{ item.quantity }}" min="1" max="99"
+                                            data-item_id="{{ item.item_id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn btn-outline-dark border-4 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                                <i class="fa-solid fa-circle-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
