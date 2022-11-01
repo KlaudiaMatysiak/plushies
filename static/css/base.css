@@ -18,3 +18,9 @@ body {
     bottom: 10px;
     right: 10px;
 }
+
+.message-container {
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
