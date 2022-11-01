@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
@@ -39,7 +40,9 @@ def shop(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                print("error, search empty")
+                messages.error(
+                    request,
+                    f'Search criteria empty!')
                 return redirect(reverse('shop'))
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query) | Q(color__icontains=query)
