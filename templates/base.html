@@ -130,9 +130,22 @@
         <div class="row">
         </div>
     </div>
+    <!-- Message container -->
+    {% if messages %}
+    <div class="message-container d-flex m-2">
+        {% for message in messages %}
+            {% include 'includes/toasts/toast_success.html' %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
     {% block content %}
     {% endblock %}
+
     {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').show()
+    </script>
     {% endblock %}
 
 </body>
