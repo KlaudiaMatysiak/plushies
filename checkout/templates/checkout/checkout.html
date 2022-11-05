@@ -26,7 +26,7 @@
                 </div>
             </div>
             {% for item in cart_items %}
-            <div class="row">
+            <div class="row bg-white py-2 my-2">
                 <div class="col-2 mb-1">
                     <a href="{% url 'show_product' item.product.id %}">
                         <img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
@@ -61,13 +61,13 @@
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="mb-5">
-                    <legend class="fieldset-label small px-2 w-auto">Contact Information</legend>
+                    <legend class="fieldset-label display-6 px-2 w-auto">Contact Information</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                     {{ order_form.phone_number | as_crispy_field }}
                 </fieldset>
                 <fieldset class="mb-5">
-                    <legend class="fieldset-label small px-2 w-auto">Delivery</legend>
+                    <legend class="fieldset-label display-6 px-2 w-auto">Delivery</legend>
                     {{ order_form.street_address1 | as_crispy_field }}
                     {{ order_form.street_address2 | as_crispy_field }}
                     {{ order_form.town_or_city | as_crispy_field }}
@@ -88,21 +88,21 @@
                         {% endif %}
                     </div>
                 </fieldset>
-                <fieldset class="px-3">
-                    <legend class="fieldset-label small px-2 w-auto">Payment</legend>
+                <fieldset>
+                    <legend class="fieldset-label display-6 px-2 w-auto">Payment</legend>
                     <!-- Stripe card element -->
                     <div class="mb-3" id="card-elemnt"></div>
                     <!-- Form errors -->
                     <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                 </fieldset>
                 <div class="d-flex flex-row justify-content-between mt-5 mb-2">
-                    <a href="{% url 'view_cart' %}" class="btn btn-outline-dark btn-lg rounded-4">
+                    <a href="{% url 'view_cart' %}" class="btn btn-outline-dark rounded-4">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="fw-bold">Return to Cart</span>
                     </a>
-                    <button id="submit-button" class="btn btn-outline-success btn-lg rounded-4">
+                    <button id="submit-button" class="btn btn-outline-success rounded-4">
                         <span class="fw-bold">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
