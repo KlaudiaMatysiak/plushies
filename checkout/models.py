@@ -36,7 +36,7 @@ class Order(models.Model):
 
     def update_total(self):
         """ Update the grand total """
-        self.order_total = self.orderitems.aggregate(Sum('item_total'))['item_total__sum']
+        self.order_total = self.orderitems.aggregate(Sum('item_total'))['item_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
@@ -60,11 +60,9 @@ class Order(models.Model):
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='orderitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    product_size = models.ForeignKey(Size, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     item_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
-    
     def save(self, *args, **kwargs):
         """
         Override the save method to set the item total
@@ -72,7 +70,6 @@ class OrderItem(models.Model):
         """
         self.item_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
-    
-    
+
     def __str__(self):
         return f'{self.product.name} on order {self.order.order_number}'
