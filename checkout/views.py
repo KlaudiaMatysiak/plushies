@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.conf import settings
 from cart.contexts import cart_contents
-from products.models import Product
+from products.models import Product, Size
 from .forms import OrderForm
 from .models import Order, OrderItem
 
@@ -33,13 +33,13 @@ def checkout(request):
         if order_form.is_valid():
             order = order_form.save()
             for item_id, quantity in cart.items():
-                print(cart.items())
                 try:
                     product = Product.objects.get(id=item_id)
                     order_item = OrderItem(
                         order=order,
                         product=product,
                         quantity=quantity,
+                        product_size=product.size
                     )
                     order_item.save()
                 except Product.DoesNotExist:
@@ -65,15 +65,15 @@ def checkout(request):
             )
             return redirect(reverse('products'))
 
-        current_cart = cart_contents(request)
-        total = current_cart['grand_total']
-        stripe_total = round(total * 100)
-        stripe.api_key = stripe_secret_key
-        intent = stripe.PaymentIntent.create(
-            amount=stripe_total,
-            currency=settings.STRIPE_CURRENCY,
-        )
-        order_form = OrderForm()
+    current_cart = cart_contents(request)
+    total = current_cart['grand_total']
+    stripe_total = round(total * 100)
+    stripe.api_key = stripe_secret_key
+    intent = stripe.PaymentIntent.create(
+        amount=stripe_total,
+        currency=settings.STRIPE_CURRENCY,
+    )
+    order_form = OrderForm()
 
     template = 'checkout/checkout.html'
     context = {
