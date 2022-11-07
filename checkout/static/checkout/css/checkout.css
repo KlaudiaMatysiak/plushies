@@ -36,6 +36,22 @@
     border: 1px solid #005050;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+#div_id_country select {
+    border: 1px solid #005050;
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+
 #loading-overlay {
 	display: none;
 	position: fixed;
