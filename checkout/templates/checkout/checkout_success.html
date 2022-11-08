@@ -10,10 +10,15 @@
 <div class="container">
     <div class="row">
         <div class="col text-center mt-5 mb-5">
-            <h1 class="display-2">Thank you!</h1>
-            <p>Order successfully processed!</p>
-            <p>Your order number is {{ order.order_number }}. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
-            <p>Your order details are below.</p>
+            {% if from_profile %}
+                <h1 class="display-2">History order details</h1>
+                <p>Details on your order purchased <strong>{{ order.date }}</strong></p>
+            {% else %}
+                <h1 class="display-2">Thank you!</h1>
+                <p>Order successfully processed!</p>
+                <p>Your order number is {{ order.order_number }}. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <p>Your order details are below.</p>
+            {% endif %}
         </div>
     </div>
     <div class="row justify-content-center">
@@ -179,6 +184,26 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-9 text-end">
+            {% if from_profile %}
+                <a href="{% url 'profile' %}" class="btn btn-outline-dark rounded-4 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-angle-left"></i>
+                    </span>
+                    <span class="text-uppercase">Back to Profile</span>
+                </a>
+            {% else %}
+                <a href="{% url 'shop' %}" class="btn btn-outline-dark rounded-4 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                    <span class="text-uppercase">Back to Shop</span>
+                </a>
+            {% endif %}
         </div>
     </div>
 </div>
