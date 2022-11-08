@@ -109,7 +109,7 @@
                         <li><a href="#" class="dropdown-item">Product Management</a></li>
                         {% endif %}
                         <!-- If user is logged in, show My Profile and Logout-->
-                        <li><a href="#" class="dropdown-item">My Profile</a></li>
+                        <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
                         <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
                         {% else %}
                         <!-- If user logged out, show Register and Login -->
