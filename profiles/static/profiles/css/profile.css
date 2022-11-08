@@ -1,0 +1,13 @@
+#profile-update-form select {
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    border: 0;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
