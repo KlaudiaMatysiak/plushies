@@ -60,6 +60,12 @@
                                         </a>
                                     </p>
                                     {% endif %}
+                                    {% if request.user.is_superuser %}
+                                    <div class="mt-2">
+                                        <a class="btn btn-sm btn-dark fw-bold" href="{% url 'edit_product' product.id %}">Edit</a> 
+                                        <a class="btn btn-sm btn-danger fw-bold" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>

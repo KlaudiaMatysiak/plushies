@@ -14,6 +14,12 @@
             {% endif %}
         </div>
         <div class="col-12 col-md-6 col-lg-4">
+            {% if request.user.is_superuser %}
+            <div class="mb-3 text-end">
+                <a class="btn btn-sm btn-dark fw-bold" href="{% url 'edit_product' product.id %}">Edit</a> 
+                <a class="btn btn-sm btn-danger fw-bold" href="{% url 'delete_product' product.id %}">Delete</a>
+            </div>
+            {% endif %}
             <p>{{ product.name }}</p>
             {% if product.category %}
             <p class="mt-1">
