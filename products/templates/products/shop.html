@@ -38,8 +38,13 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100">
                         <a class="text-decoration-none text-black" href="{% url 'show_product' product.id %}">
-                            <img class="card-img-top img-fluid p-2" src="{{ MEDIA_URL }}{{ product.image }}"
-                                alt="{{ product.name }}">
+                            {% if product.image %}
+                                <img class="card-img-top img-fluid p-2" src="{{ MEDIA_URL }}{{ product.image }}"
+                                    alt="{{ product.name }}">
+                            {% else %}
+                                <img class="card-img-top img-fluid p-2" src="{{ MEDIA_URL }}image-placeholder.png"
+                                    alt="{{ product.name }}">
+                            {% endif %}
                             <div class="card-body">
                                 <p class="card-text">{{ product.name }} {{ product.size }}</p>
                             </div>

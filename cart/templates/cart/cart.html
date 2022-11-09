@@ -20,8 +20,14 @@
             {% for item in cart_items %}
             <div class="row">
                 <!-- Product image -->
-                <div class="col-4 col-lg-3 p-3">
-                    <img class="img-fluid" src="{{ MEDIA_URL }}{{ item.product.image }}" width="150">
+                <div class="col-4 col-lg-3 p-1">
+                    {% if item.product.image %}
+                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}{{ item.product.image }}"
+                            alt="{{ item.product.name }}" width="150" height="150">
+                    {% else %}
+                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}image-placeholder.png"
+                            alt="Image Placeholder" width="150" height="150">
+                    {% endif %}
                 </div>
                 <div class="col-8 col-lg-9 d-flex flex-column justify-content-center">
                     <div class="row mt-2">

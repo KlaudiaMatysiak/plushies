@@ -29,7 +29,13 @@
             <div class="row bg-white py-2 my-2">
                 <div class="col-2 mb-1">
                     <a href="{% url 'show_product' item.product.id %}">
-                        <img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
+                        {% if item.product.image %}
+                            <img class="img-fluid p-2" src="{{ MEDIA_URL }}{{ item.product.image }}"
+                                alt="{{ item.product.name }}">
+                        {% else %}
+                            <img class="img-fluid p-2" src="{{ MEDIA_URL }}image-placeholder.png"
+                                alt="Image Placeholder">
+                        {% endif %}
                     </a>
                 </div>
                 <div class="col-7">
