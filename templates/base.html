@@ -37,10 +37,10 @@
             <p class="fw-bold mb-0 pb-2 pt-2">Free delivery on orders over £{{ free_delivery_threshold }}!</p>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-md bg-white">
         <div class="container-fluid nav-border">
             <!-- Navbar toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@
                     </li>
                 </ul>
                 <!-- Search bar -->
-                <form class="d-flex" role="search" method="GET" action="{% url 'shop' %}">
+                <form class="d-flex me-md-3" role="search" method="GET" action="{% url 'shop' %}">
                     <input class="form-control me-2" type="text" placeholder="Search for Plushies" aria-label="Search"
                         name="q">
                     <div class="input-group-append">
@@ -81,42 +81,42 @@
             </div>
             <!-- User Account and Cart -->
             <ul class="navbar-nav mt-3 d-flex flex-row justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link p-2 {% if grand_total %}fw-bold{% endif %}" href="{% url 'view_cart' %}">
-                        <div class="text-center">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <p class="my-0">
-                                <!-- If products in cart, show grand total -->
-                                {% if grand_total %}
-                                £{{ grand_total|floatformat:2 }}
-                                {% else %}
-                                £0.00
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link p-2" href="#" id="user-options" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa-solid fa-circle-user"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="user-options">
-                        <!-- If user is logged in and it is a superuser, show Product Management -->
-                        {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <li><a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a></li>
-                        {% endif %}
-                        <!-- If user is logged in, show My Profile and Logout-->
-                        <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
-                        <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
-                        {% else %}
-                        <!-- If user logged out, show Register and Login -->
-                        <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
-                        <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
-                        {% endif %}
-                    </ul>
-                </li>
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <ul class="dropdown-menu border-0 position-absolute" aria-labelledby="user-options">
+                    <!-- If user is logged in and it is a superuser, show Product Management -->
+                    {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                    <li><a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a></li>
+                    {% endif %}
+                    <!-- If user is logged in, show My Profile and Logout-->
+                    <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
+                    <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                    {% else %}
+                    <!-- If user logged out, show Register and Login -->
+                    <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
+                    <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                    {% endif %}
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-2 {% if grand_total %}fw-bold{% endif %}" href="{% url 'view_cart' %}">
+                    <div class="text-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="my-0">
+                            <!-- If products in cart, show grand total -->
+                            {% if grand_total %}
+                            £{{ grand_total|floatformat:2 }}
+                            {% else %}
+                            £0.00
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
+            </li>
             </ul>
         </div>
     </nav>
