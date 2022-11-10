@@ -14,6 +14,10 @@ body {
     border-color: #ebebeb;
 }
 
+.content {
+    min-height: 80vh
+}
+
 .button-position {
     position: fixed;
     bottom: 10px;
