@@ -138,6 +138,84 @@
     {% block content %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+        <div class="container p-4 pb-0">
+            <!-- Section: General Information, Categories, Contact Information -->
+            <section class="p-3 pt-0">
+                <div class="row">
+                    <!-- General Information -->
+                    <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 fw-bold">
+                            Plushies
+                        </h6>
+                        <p>
+                            Feel free to contact us about any of your plushie questions!
+                            Looking to buy plushies? Then have a look around our plushie store today!
+                        </p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Links to the Categories Products -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 fw-bold">Categories</h6>
+                        <p>
+                            <a class="text-white text-decoration-none" href="{% url 'shop' %}?category=animals_plushies">Animal Plushies</a>
+                        </p>
+                        <p>
+                            <a class="text-white text-decoration-none" href="{% url 'shop' %}?category=food_plushies">Food Plushies</a>
+                        </p>
+                        <p>
+                            <a class="text-white text-decoration-none" href="{% url 'shop' %}?category=gaming_plushies">Gaming Plushies</a>
+                        </p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Contact Information -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4  fw-bold">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> Cardiff, CF10 2BY, UK</p>
+                        <p><i class="fas fa-envelope mr-3"></i> contact@plushies.co.uk</p>
+                        <p><i class="fas fa-phone mr-3"></i> 029 2018 0777</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-3">
+
+            <!-- Disclaimer and Social Links -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Disclaimer -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">
+                            <p>Disclaimer: For educational purposes only. No orders will be processed.</p>
+                        </div>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <!-- Facebook -->
+                        <a href="http://facebook.com/" class="btn btn-outline-light btn-floating m-1"
+                            role="button" target="_blank" rel="noopener" aria-label="facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+
+                        <!-- Twitter -->
+                        <a href="http://twitter.com/" class="btn btn-outline-light btn-floating m-1"
+                            role="button" target="_blank" rel="noopener" aria-label="twitter"><i
+                                class="fab fa-twitter"></i></a>
+
+                        <!-- Instagram -->
+                        <a href="http://instagram.com/" class="btn btn-outline-light btn-floating m-1"
+                            role="button" target="_blank" rel="noopener" aria-label="instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
     {% block postloadjs %}
     <!-- Bootstrap and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
