@@ -11,10 +11,10 @@
     <div class="row">
         <div class="col text-center mt-5 mb-5">
             {% if from_profile %}
-                <h1 class="display-2">History order details</h1>
+                <h2 class="display-3">History order details</h2>
                 <p>Details on your order purchased <strong>{{ order.date }}</strong></p>
             {% else %}
-                <h1 class="display-2">Thank you!</h1>
+                <h2 class="display-3">Thank you!</h2>
                 <p>Order successfully processed!</p>
                 <p>Your order number is {{ order.order_number }}. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
                 <p>Your order details are below.</p>
