@@ -22,7 +22,7 @@
                     <p class="mb-1 mr-0 small text-muted">Item</p>
                 </div>
                 <div class="col-3">
-                    <p class="mb-1 mr-0 small text-muted">Subtotal</p>
+                    <p class="mb-1 mr-0 small text-muted text-end">Subtotal</p>
                 </div>
             </div>
             {% for item in cart_items %}
@@ -44,7 +44,7 @@
                     <p class="my-0 small text-muted">QTY x {{ item.quantity }}</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-0 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    <p class="my-0 small text-muted text-end">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </div>
             </div>
         {% endfor %}
@@ -56,9 +56,9 @@
                 <p class="my-0">Total:</p>
             </div>
             <div class="col-3">
-                <p class="my-0">£{{ total | floatformat:2 }}</p>
-                <p class="my-0">£{{ delivery | floatformat:2 }}</p>
-                <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
+                <p class="my-0 text-end">£{{ total | floatformat:2 }}</p>
+                <p class="my-0 text-end">£{{ delivery | floatformat:2 }}</p>
+                <p class="my-0 text-end"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
             </div>
         </div>
         </div>
