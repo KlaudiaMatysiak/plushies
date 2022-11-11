@@ -10,6 +10,7 @@ def contact(request):
         if contact_form.is_valid():
             contact_form.save()
             messages.success(request, 'Thanks for your message!')
+            contact_form = ContactForm()
     context = {
         'form': contact_form,
     }
