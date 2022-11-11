@@ -14,6 +14,10 @@ body {
     border-color: #ebebeb;
 }
 
+.logo {
+    color: #335050;
+}
+
 .content {
     min-height: 80vh
 }
