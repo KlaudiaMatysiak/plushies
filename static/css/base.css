@@ -1,9 +1,14 @@
+/* General styling */
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #F5FBFB;
-    /* #FFA258, #58bdcf, #A2E4E0, #F5FBFB; */
 }
 
+.content {
+    min-height: 80vh
+}
+
+/* Navbar styling */
 .navbar {
     padding: 0;
 }
@@ -14,16 +19,14 @@ body {
     border-color: #ebebeb;
 }
 
-.content {
-    min-height: 80vh
-}
-
+/* Fixed button on the shop template */
 .button-position {
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
 
+/* Message container */
 .message-container {
     position: absolute;
     top: 125px;
@@ -31,6 +34,7 @@ body {
     z-index: 999;
 }
 
+/* Styling for all forms on the website */
 .form-control {
     box-sizing: border-box;
     height: 40px;
@@ -57,6 +61,7 @@ body {
     color: #aab7c4;
 }
 
+/* Links styling in the allauth templates */
 .allauth-inner-content a {
     color: #086a7a;
     text-decoration: none;
@@ -67,6 +72,7 @@ body {
     display: none;
 }
 
+/* Footer */
 footer {
     background-color: #335050;
 }
