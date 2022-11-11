@@ -9,10 +9,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-6 my-4 text-center text-md-start order-md-first">
+        <div class="col-12 col-md-6 my-4 text-center order-md-first">
             <p class="fs-4"><i class="fa-solid fa-clock"></i> Opening hours</p>
             <div class="d-flex">
-                <div class="col-6 text-end px-2 text-md-start">
+                <div class="col-6 text-end px-3">
                     <p>Monday</p>
                     <p>Tuesday</p>
                     <p>Wednesday</p>
@@ -32,14 +32,24 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 my-4 text-center text-md-start order-first">
+        <div class="col-12 col-md-6 my-4 text-center order-first">
             <div class="col-12">
-                <p class="fs-3 fw-bold">Any quaries?</p>
-                <p class="fs-5">Send us an email or call us.</p>
+                <p class="fs-3 fw-bold">Any queries?</p>
+                <p class="fs-5">Send us message, an email or call us.</p>
                 <p><i class="fa-solid fa-phone"></i> 029 2018 0777</p>
-                <p><i class="fa-solid fa-mailbox"></i> contact@plushies.com</p>
-                <p><i class="fa-solid fa-location-pin"></i> Cardiff, United Kingdom</p>
+                <p><i class="fa-regular fa-envelope"></i> contact@plushies.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Cardiff, United Kingdom</p>
             </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-12 col-md-8">
+            <h2 class="fs-3">Message</h2>
+            <form action="{% url 'contact' %}" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-outline-dark text-end" type="submit">Send</button>
+            </form>
         </div>
     </div>
 </div>
