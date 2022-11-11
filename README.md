@@ -3,6 +3,33 @@
 * [Introduction](#introduction)
 * [UX](#ux)
     * [User Stories](#users-tories)
+    * [Design](#design)
+    * [Wireframes](#wireframes)
+        * [Mobile Wireframes](#mobile-wireframes)
+        * [Desktop Wireframes](#desktop-wireframes)
+* [Database](#database)
+* [Features](#features)
+    * [Navbar](#navbar)
+    * [Home Page](#home-page)
+    * [Footer](#footer)
+    * [Shop Page](#shop-page)
+    * [Contact](#contact)
+    * [Shopping Cart](#shopping-cart)
+    * [Checkout](#checkout)
+    * [Successful checkout](#successful-checkout)
+    * [Register](#register)
+    * [Verify Email](#verify-email)
+    * [Login](#login)
+    * [User Profile](#user-profile)
+    * [History order details](#history-order-details)
+    * [Admin Page](#admin-page)
+    * [Messages](#messages)
+* [Technologies Used](#technologies-used)
+    * [Languages](#languages)
+    * [Libraries and Programs](#libraries-and-programs)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 # Introduction
 It is the final project for the 'Full Stack Frameworks with Django' module at Code Institute. The Plushies project is an eCommerce shop that is offering to sell plushies.
@@ -71,6 +98,23 @@ PDF file here
 To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 
 ![Database](documentation/database.jpg)
+
+## Features
+### Navbar
+### Home Page
+### Footer
+### Shop Page
+### Contact
+### Shopping Cart
+### Checkout
+### Successful checkout
+### Register
+### Verify Email
+### Login
+### User Profile
+### History order details
+### Admin Page
+### Messages
 
 # Technologies Used
 ##  Languages
@@ -165,3 +209,5 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
     * USE_AWS: True
 
 
+
+# Credits
