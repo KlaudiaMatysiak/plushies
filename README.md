@@ -208,6 +208,36 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
     * STRIPE_WH_SECRET # stripe
     * USE_AWS: True
 
-
-
 # Credits
+## Images and descriptions
+| Link to the image | Image and/or Description |
+|:---:|:---:|
+|[Click here](https://www.pngmart.com/image/203020)| Hero Plushie |
+|[Click here](https://www.google.com/search?q=image+placeholder+plushie&tbm=isch&ved=2ahUKEwij_Mnr8Jf7AhULrycCHQDkBJ8Q2-cCegQIABAA&oq=image+placeholder+plushie&gs_lcp=CgNpbWcQAzoECCMQJzoECAAQQzoFCAAQgAQ6BggAEAUQHjoGCAAQCBAeUJsGWPwOYMkQaABwAHgAgAFFiAH4A5IBATmYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=wMdmY6OcBIvensEPgMiT-Ak&bih=961&biw=1920&rlz=1C1ONGR_en-GBGB992GB992#imgrc=noVQp1JLBjCbWM)| Image Placeholder |
+|[Click here](https://www.etsy.com/uk/listing/627921279/kawaii-plush-waffle-plush-food-plushies)| Waffle Plushie |
+|[Click here](https://www.amazon.co.uk/Living-Nature-Highland-Soft-Sound/dp/B00OLN1KSI/ref=asc_df_B00OLN1KSI/?tag=googshopuk-21&linkCode=df0&hvadid=310869151196&hvpos=&hvnetw=g&hvrand=2146499008631646336&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007416&hvtargid=pla-403233033491&psc=1)| Highland Cow Plushie |
+|[Click here](https://www.plushieland.co.uk/products/fries-fast-food-plushie-oversize-plush-toy?variant=42531862184148) [Click here](https://www.1001hobbies.co.uk/plushes/439144-kidrobot-kidtcymp338-yummy-world-fernando-the-fries-2-0-large-plush-883975159306.html) | Fries Plushie |
+|[Click here](https://www.bigbountyshop.com/products/pizza-slice-plushie-oversize-food-plush-toy-plushieland?currency=GBP&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping)| Pizza Slice Plushie |
+|[Click here](https://www.bigbountyshop.com/collections/plushies/products/black-cat-plush-toy-black-cat-pillow-soft-plush-doll-cat-plushie-cat-pillow-stuffed-animal-soft-plush-pillow-baby-plush-toys-cat-shape-design-sofa-pillow-decoration-doll)| Cat Plushie |
+|[Click here](https://www.smythstoys.com/uk/en-gb/brand/pok%c3%a9mon/pokemon-toys/bulbasaur-20cm-pok%c3%a9mon-plush/p/171511022)| Pokémon Bulbasaur Plushie |
+|[Click here](https://www.campusgifts.co.uk/product/jellycat-vivacious-vegetable-broccoli?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1KmhML4afi62a4kMRWsZDHpYx_UNc5zFWvr4pzeDPE2pJzX8cirkXxoCrNkQAvD_BwE)| Broccoli Plushie |
+|[Click here](https://www.campusgifts.co.uk/product/jellycat-amuseable-avocado-small?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1OJYbLI2OhSoV1fn48A6Gt9AzDz5cSkTdwIXOB5PCLuhyx6ngpeDlhoCLpAQAvD_BwE)| Avocado Plushie |
+
+
+|[Click here](https://www.google.com/shopping/product/9910092399480056401?q=Plushies+food&rlz=1C1ONGR_en-GBGB992GB992&sxsrf=ALiCzsbGEVhtYhLhH0DyXw-FAHCRh3iz_A:1668031777914&biw=1920&bih=961&dpr=1&prds=eto:10209888280867773364_0,pid:1792594186089744155&sa=X&ved=0ahUKEwie3qXbjqL7AhWWEMAKHUuzCGgQ8gIIoAooAA)| Ice Cream Plushie |
+|[Click here](https://www.bigbountyshop.com/collections/plushies/products/giant-spider-plushie-animal-plush-toy)| Spider Plushie |
+|[Click here](https://www.amazon.co.uk/Zappi-Co-Collectible-Turtle-Cuddly/dp/B07PJSH4MG/ref=sr_1_31?keywords=Plush%2BAnimals&qid=1668032197&sr=8-31&th=1)| Turtle Plushie |
+|[Click here](https://www.amazon.co.uk/Sanei-Crossing-Tanukichi-Horizons-Atsumare/dp/B08CXYF6BH/ref=sr_1_42?keywords=Plush+Animals&qid=1668032197&sr=8-42)| Animal Crossing New Horizon Tom Nook Plushie |
+|[Click here](https://www.argos.co.uk/product/3361973?istCompanyId=a74d8886-5df9-4baa-b776-166b3bf9111c&istFeedId=30f62ea9-9626-4cac-97c8-9ff3921f8558&istItemId=rxatxlqli&istBid=t&&cmpid=GS001&_$ja=tsid:59157%7cacid:629-618-1342%7ccid:16634989433%7cagid:133162502845%7ctid:pla-870087826733%7ccrid:588879114441%7cnw:u%7crnd:16820350002314530517%7cdvc:c%7cadp:%7cmt:%7cloc:1007452&utm_source=Google&utm_medium=cpc&utm_campaign=16634989433&utm_term=3361973&utm_content=shopping&utm_custom1=133162502845&utm_custom2=629-618-1342&GPDP=true&gclid=CjwKCAiAvK2bBhB8EiwAZUbP1MufeLcyf-IwO9cbAyJOM6Ly44FirdUJxeu8pScpAitt7B-9DvgUohoCb2wQAvD_BwE&gclsrc=aw.ds)| Lobster Plushie |
+|[Click here](https://www.carousell.sg/p/snorlax-plush-toy-50cm-1122374686/)| Pokémon Snorlax Plushie |
+|[Click here](https://www.game.co.uk/en/pok-mon-18-inch-sleeping-plush-jigglypuff-2885161)| Pokémon Jigglypuff Plushie |
+|[Click here](https://battlegroundgaming.co.uk/collections/plush/products/pokemon-8-inch-plush-happy-pikachu)| Pokémon Pikachu Plushie |
+|[Click here](https://www.sportsdirect.com/pokemon-pok%C3%A9mon-8-inch-vulpix-plush-900797#colcode=90079790)| Pokémon Vulpix Plushie |
+|[Click here](https://www.campusgifts.co.uk/jellycat-amuseable-popcorn-a6pc?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1C3L-_Ph_JnlzJYxorAsPvZLLNsT9xNr5BGyYriI44ukqBvP68yKJBoCW2sQAvD_BwE)| Popcorn Plushie |
+|[Click here](https://www.boutiquesdemusees.fr/en/plushs/clementine-plush-9-x-12-cm-jellycat/34280.html?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1NVjTit0xNpsRN4XN52CyuoRsfEdM4OFeQx0cRjkpF2Ol9xRr3cUuRoCnygQAvD_BwE)| Clementine Plushie |
+|[Click here](https://www.campusgifts.co.uk/product/jellycat-vivacious-vegetable-onion?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1LMRmw17QQqEpTDpWUoUZJOsAlbWYgdOt6B3ndEyTPnFul_T74DNfxoCHxoQAvD_BwE)| Onion Plushie |
+|[Click here](https://www.campusgifts.co.uk/jellycat-fabulous-fruit-peach-fabf6peach?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1OTR9PVKBgUCDrwkAHVxO1ALP-pcwVinVrTM8P8Lfy9iD9-fya2nMBoCnMUQAvD_BwE)| Peach Plushie |
+|[Click here](https://www.campusgifts.co.uk/jellycat-vivacious-vegetable-tomato-jellycat?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1Mu0vg2JAYctGFDX3qsEsa10NhHPEs6e_E8hClTEqN9Z-3IGSYa1HxoCvGgQAvD_BwE)| Vine Tomatoes Plushie |
+|[Click here](https://www.highworthemporium.co.uk/p/jellycat-soft-toys-vivacious-vegetable-mushroom)| Mushroom Plushie |
+
+
