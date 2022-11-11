@@ -46,8 +46,7 @@ def shop(request):
                     request,
                     f'Search criteria empty!')
                 return redirect(reverse('shop'))
-            queries = Q(name__icontains=query) | Q(
-                description__icontains=query) | Q(color__icontains=query)
+            queries = Q(name__icontains=query) | Q(color__icontains=query)
             products = products.filter(queries)
     current_sorting = f'{sort}_{direction}'
 
