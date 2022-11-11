@@ -1,3 +1,4 @@
+/* jshint esversion: 11, jquery: true */
 /**
 * Core logic/payment flow comes from:
 * https://stripe.com/docs/payments/accept-a-payment
