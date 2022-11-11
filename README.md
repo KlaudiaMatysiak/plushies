@@ -61,10 +61,10 @@ Additional information:
 * As a user, I want to login and logout to access my personal account information.
 * As a user, I want to be able recover my password so I have access to my account.
 * As a user, I want to receive an email confirmation after registering account to verify that my account registration was successful.
-* As a user, I want to have a poersonalised user profile so I can view my order history and order confirmations, and save my payment information.
+* As a user, I want to have a personalised user profile so I can view my order history and order confirmations, and save my payment information.
 * As a user, I want to sort the list of available products by price, by name or by category name.
 * As a user, I want to sort a specific category of product by price or by name.
-* As a user, I want to search for product by name or description to find specific product.
+* As a user, I want to search for product by name or color to find specific product.
 * As a user, I want to see what I've searched for and how many products was found.
 * As a user, I want to select the size and quantity of a product.
 * As a user, I want to view products in my cart and identify total cost of my purchase.
