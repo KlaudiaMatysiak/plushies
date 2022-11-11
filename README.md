@@ -7,6 +7,19 @@
 # Introduction
 It is the final project for the 'Full Stack Frameworks with Django' module at Code Institute. The Plushies project is an eCommerce shop that is offering to sell plushies.
 Please note that this website is for eductional purposes. Do not enter any personal credit/debit card details.
+## Testing Payment with Stripe
+As a way of exemplifying how the payment functionality works, Stripe provides three types of payment events and their respective card numbers: successful payment, requires authentication and failed payment.
+
+| Payment event | Card Number
+|:---:|:---:|
+|Successful payment|4242 4242 4242 4242
+|Requires authentication|4000 0025 0000 3155
+|Failed payment|4000 0000 0000 9995
+
+Additional information:
+* Use a valid future date.
+* Use any three-digit CVC.
+
 
 # UX
 
