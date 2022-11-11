@@ -1,8 +1,10 @@
+/* Max height for section with order history */
 .order-history {
     max-height: 484px;
     overflow-y: auto;
 }
 
+/* Form styling */
 #profile-update-form select {
     box-shadow: 0 1px 3px 0 #e6ebf1;
     border: 0;

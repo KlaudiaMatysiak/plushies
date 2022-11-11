@@ -1,4 +1,5 @@
 /* jshint esversion: 11 */
+// toasts
 let toastElList = [].slice.call(document.querySelectorAll('.toast'));
 let toastList = toastElList.map(function (toastEl) {
     let option = {

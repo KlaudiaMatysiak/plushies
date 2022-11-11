@@ -6,14 +6,15 @@
 {% endblock %}
 
 {% block content %}
-<!-- Page title -->
 <div class="container mb-5">
+    <!-- Page title -->
     <div class="row">
         <div class="col text-center mt-5 mb-5">
             <h2 class="display-3">My profile</h2>
         </div>
     </div>
     <div class="row">
+        <!-- Profile form -->
         <div class="col-12 col-lg-6">
             <p class="text-muted fs-3 w-auto">Default Delivery Information</p>
             <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
@@ -22,6 +23,7 @@
                 <button class="btn btn-outline-dark rounded-4 float-end">Update Information</button>
             </form>
         </div>
+        <!-- Order history -->
         <div class="col-12 col-lg-6">
             <p class="text-muted fs-3 w-auto">Order History</p>
             
