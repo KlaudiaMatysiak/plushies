@@ -158,20 +158,41 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 
     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/KlaudiaMatysiak/plushies)
 
-* Create Python Environment Variables
+## Deployment
+* Cloned repositorium open in gitpod
+* Install all dependencies from requirements.txt
+    ```bash
+    pip install -r requirements.txt
+    ```
+* Create Python Environment Variables in env.py and add to .gitignore
     * Django secret key
-    * To test checkout payments create stripe account
-        * Stripe public key
-        * Stripe secret key
-* Install the Python dependencies from requirements.txt
-    ```bash
-    pip3 freeze --local > requirements.txt
-    ```
-* Create Procfile
-    ```bash
-    echo web: python app.py > Procfile
-    ```
-* Make migrations to prepare database.
+        ```bash
+        os.environ.setdefault("SECRET_KEY", "Your key")
+        ```
+    * DEBUG
+        ```bash
+        os.environ.setdefault("DEBUG", "True")
+        ```
+    * Database url
+        ```bash
+        os.environ.setdefault("DATABASE_URL", "Your url")
+        ```
+    * Stripe public key
+        ```bash
+        os.environ.setdefault("STRIPE_PUBLIC_KEY", "Your key")
+        ```
+    * Stripe secret key
+        ```bash
+        os.environ.setdefault("STRIPE_SECRET_KEY", "Your key")
+        ```
+    * Stripe webhook signing secret key
+        ```bash
+        os.environ.setdefault("STRIPE_WH_SECRET", "Your key")
+        ```
+* On the heroku website: Create heroku app, given the name and region closes to you.
+* On the heroku on the resources tab add in add-ons 'Heroku Postgres' with free plan
+* Get heroku database url from Heroku website in the settings tab in Config Vars and paste into DATABASE_URL variable in the env.py.
+* Make migrations to prepare database. Remove flags if happy with outcome.
     ```bash
     python3 manage.py makemigrations --dry-run
     python3 manage.py migrate --plan
@@ -184,29 +205,111 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
     ```bash
     python3 manage.py runserver
     ```
-
-## Deployment on Heroku
-### Pre set up
-* Project running on gitpod
-* [Heroku account](https://signup.heroku.com/)
-* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
-* [AWS account](https://aws.amazon.com/)
-* [Stripe account](https://stripe.com/en-gb) for payments
-* [Gmail account](https://www.google.com/intl/en-GB/gmail/about/) for email SMTP
-### On Heroku
-* On the website create new app
-* On the heroku website, in the deploy folder connect your github account, find repositorium and enable automatic deployment
-* On the heroku website set enviroment variables:
-    * AWS_ACCESS_KEY_ID #AWS S3
-    * AWS_SECRET_ACCESS_KEY # AWS S3
-    * DATABASE_URL # postgresql database from heroku
-    * EMAIL_HOST_PASS # gmail smtp
-    * EMAIL_HOST_USER # gmail smtp
-    * SECRET_KEY  # the Django secret key
-    * STRIPE_PUBLIC_KEY # stripe
-    * STRIPE_SECRET_KEY # stripe
-    * STRIPE_WH_SECRET # stripe
-    * USE_AWS: True
+* In the terminal login to heroku
+    ```bash
+    heroku login -i
+    ```
+* Temporarily disable collectstatic
+    ```bash
+    heroku config:set DISABLE_COLLECTSTATIC=1 --app name-of-your-heroku-app
+    ```
+* In the settings.py change ALLOWED_HOSTS 'plushies.herokuapp.com' for your heroku url app.
+* Commit changes and push to the heroku
+    ```bash
+    git add .
+    git commit -m "Change allowed hosts"
+    git push
+    ```
+    ```bash
+    heroku git:remote -a name-of-your-heroku-app
+    git push heroku main
+    ```
+* On the heroku website in the Deploy tab, connect to Github, search for your repository, and connect it. In the Automatic deployes section click button Enable Automatic Deployes.
+* Generate Django Secret Key [here](https://miniwebtool.com/django-secret-key-generator/), and add django secret key in env.py and in the heroku Config Vars.
+* Create AWS account [here](https://aws.amazon.com/) and sign in. Choose Storage S3 service and create bucket.
+    * Give it a name same as your heroku app and choose the closest region.
+    * Choose 'ACLs enabled' and in the 'Obiect Ownership': 'Bucket owner preferred'
+    * On the created bucket in the 'Properties' tab -> 'Static website hosting' -> tick 'Use this bucket to host a website', fill in index.html and error.html (Default values as they won't be used in our case) and click 'Save'
+    * On the 'Permision' tab in the 'CORS configuration' paste:
+        ```bash
+        [
+            {
+                "AllowedHeaders": [
+                    "Authorization"
+                ],
+                "AllowedMethods": [
+                    "GET"
+                ],
+                "AllowedOrigins": [
+                    "*"
+                ],
+                "ExposeHeaders": []
+            }
+        ]
+        ```
+    * On the 'Permision' tab in the 'Bucket Policy' -> 'Policy Generator'
+    * On the 'AWS Policy Generator'
+        * Type: S3 Bucket Policy
+        * Principal: *
+        * Actions: GetObject
+        * copy ARN from tab before on the permision and paste it in Amazon Resource Name (ARN).
+        * click 'Add Statement'
+        * click 'Generate Policy' copy it and paste into 'Permisions' -> 'Bucket Policy' -> add * in the line "Resource": "arn.../*", and Save
+        * On the 'Permisions' tab -> 'Access Control List' -> 'Public Access' allow 'List' and Save.
+    * Find IAM in the services
+        * From sidebar choose 'User Group' -> 'Create New Group'
+        * Set group name -> next -> next -> create group
+        * From sidebar choose 'Policies'. On the JSON tab -> click 'Import managed policy' and choose to import'AmazonS3FullAccess'. On the separate tab open S3 -> 'Permisions' -> 'Bucket Policy' to get 'ARN' and paste in JSON:
+        It was:
+        ```bash
+        "Resource": "*"
+        ```
+        You want to change to
+        ```bash
+        "Resource": [
+            "arn:aws:s3:::bucket-name",
+            "arn:aws:s3:::bucket-name/*"
+        ]
+        ```
+        and Review Policy
+        * Give it a name and description and click 'Create Policy'
+        * In the 'User Group' choose group that you created, go to the permissions tab, open the 'Add permissions' dropdown, and click 'Attach policies' choose policy that you created.
+        * From the side bar go to 'Users' and 'Add user'. Give it a name 'project-name-staticfiles-user' and 'Access type': 'Programmatic access'. Add user to your group and create user.
+        * Download .csv file and save it. If you leave the page you won't come back so ensure you downloaded this file before leaving website.
+* On the Heroku in the Config Vars add:
+    * AWS_ACCESS_KEY_ID - your key from .csv file
+    * AWS_SECRET_ACCESS_KEY - your key from .csv file
+    * USE_AWS - True
+    * Remove DISABLE_COLLECTSTATIC variable
+* On the setting.py change:
+    * AWS_STORAGE_BUCKET_NAME to your aws bucket name
+    * AWS_S3_REGION_NAME to your region
+* Add, Commit and Push to the Github any changes.
+* On the AWS S3 project bucket add 'media' folder
+* If you can't login as superuser in th settings.py add
+    ```ACCOUNT_EMAIL_VERIFICATION = 'none'```
+* Create webhooks on the Stripe:
+    * For the local address url https://name.gitpod.io/checkout/wh/ and select receive all events, and add endpoint.
+        * In env.py add:
+            * STRIPE_PUBLIC_KEY - your key from Stripe in the Developers -> API keys
+            * STRIPE_SECRET_KEY - your key from Stripe in the Developers -> API keys
+            * STRIPE_WH_SECRET - your signing secret from created webhook for local address
+    * For heroku address url https://name.herokuapp.com/checkout/wh/ and select receive all events, and add endpoint.
+        * On the Heroku website in the Config Vars add Stripe keys:
+            * STRIPE_PUBLIC_KEY - your key from Stripe in the Developers -> API keys
+            * STRIPE_SECRET_KEY - your key from Stripe in the Developers -> API keys
+            * STRIPE_WH_SECRET - your signing secret from created webhook for heroku address
+* Create gmail acccount to sending real emails to the customers
+    * You need to set 2-Step verification in your account settings.
+    * In the Security tab choose 'App passwords'
+    * Select app -> Mail, Select device -> Other and give it a name
+    * In the heroku Config Vars add variables:
+        * EMAIL_HOST_PASS -> 16 character password from Gmail
+        * EMAIL_HOST_USER -> Your Gmail mail
+    * In the settings.py you can change:
+        ```if 'DEBUG' in os.environ:```
+        ```DEFAULT_FROM_EMAIL = 'any email'```
+* Add, commit and push any changes made.
 
 # Credits
 ## Images and descriptions
