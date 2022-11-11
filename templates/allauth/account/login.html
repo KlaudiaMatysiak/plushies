@@ -39,7 +39,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
   {% endif %}
-  <button class="primaryAction btn btn-outline-dark rounded-4" type="submit">{% trans "Log In" %}</button>
+  <button class="primaryAction btn btn-outline-dark rounded-4 my-2" type="submit">{% trans "Log In" %}</button>
   <p class="mt-2">
     Go back to 
     <a href="{% url 'home' %}">Home</a>
