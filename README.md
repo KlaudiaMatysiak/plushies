@@ -50,3 +50,8 @@ Additional information:
 * As a store owner, I want to add product to my store.
 * As a store owner, I want to edit details product.
 * As a store owner, I want to delete a products that are no longer for sale.
+
+## Design
+![palette](documentation/palette.jpg)
+The colors palettes for website layout are Cultured, White, and Dark Slate Grey. For the links in the Register and Login page is used Ming color.
+
