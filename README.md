@@ -98,3 +98,70 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 # Testing
 * The testing section is in a separate file, [here](TESTING.md).
 
+# Deployment
+## Forking
+1. Sign in to Github and go to my [repository](https://github.com/KlaudiaMatysiak/plushies)
+2. Select the Fork button at the top right of the page.
+3. The fork is now in your repositories.
+
+## Local Deployment
+
+* In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
+
+    - `git clone https://github.com/KlaudiaMatysiak/plushies.git`
+
+    Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/KlaudiaMatysiak/plushies)
+
+* Create Python Environment Variables
+    * Django secret key
+    * To test checkout payments create stripe account
+        * Stripe public key
+        * Stripe secret key
+* Install the Python dependencies from requirements.txt
+    ```bash
+    pip3 freeze --local > requirements.txt
+    ```
+* Create Procfile
+    ```bash
+    echo web: python app.py > Procfile
+    ```
+* Make migrations to prepare database.
+    ```bash
+    python3 manage.py makemigrations --dry-run
+    python3 manage.py migrate --plan
+    ```
+* Create super user
+    ```bash
+    python3 manage.py createsuperuser
+    ```
+* Run the site locally
+    ```bash
+    python3 manage.py runserver
+    ```
+
+## Deployment on Heroku
+### Pre set up
+* Project running on gitpod
+* [Heroku account](https://signup.heroku.com/)
+* [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
+* [AWS account](https://aws.amazon.com/)
+* [Stripe account](https://stripe.com/en-gb) for payments
+* [Gmail account](https://www.google.com/intl/en-GB/gmail/about/) for email SMTP
+### On Heroku
+* On the website create new app
+* On the heroku website, in the deploy folder connect your github account, find repositorium and enable automatic deployment
+* On the heroku website set enviroment variables:
+    * AWS_ACCESS_KEY_ID #AWS S3
+    * AWS_SECRET_ACCESS_KEY # AWS S3
+    * DATABASE_URL # postgresql database from heroku
+    * EMAIL_HOST_PASS # gmail smtp
+    * EMAIL_HOST_USER # gmail smtp
+    * SECRET_KEY  # the Django secret key
+    * STRIPE_PUBLIC_KEY # stripe
+    * STRIPE_SECRET_KEY # stripe
+    * STRIPE_WH_SECRET # stripe
+    * USE_AWS: True
+
+
