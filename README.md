@@ -67,3 +67,8 @@ PDF file here
 
 ![Desktop Wireframes](documentation/desktop-wireframes.jpg)
 
+## Database
+To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
+
+![Database](documentation/database.jpg)
+
