@@ -47,11 +47,11 @@
                                 {% if product.image %}
                                     <!-- Product image -->
                                     <img class="card-img-top img-fluid p-2" src="{{ MEDIA_URL }}{{ product.image }}"
-                                        alt="{{ product.name }}" width="300px" height="300px">
+                                        alt="{{ product.name }}" width="300" height="300">
                                 {% else %}
                                     <!-- Product placeholder -->
                                     <img class="card-img-top img-fluid p-2" src="{{ MEDIA_URL }}image-placeholder.png"
-                                        alt="{{ product.name }}" width="300px" height="300px">
+                                        alt="{{ product.name }}" width="300" height="300">
                                 {% endif %}
                                 <!-- Product name -->
                                 <div class="card-body">
