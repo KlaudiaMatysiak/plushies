@@ -55,7 +55,8 @@ Additional information:
 * As a user, I want to view a list of products to purchase.
 * As a user, I want to view selected individual product details, the price, size,description and image.
 * As a user, I want to view the total of my purchases at any time.
-* As a user, I want to view a store contant information.
+* As a user, I want to view a store contact information.
+* As a user, I want to contact easily with store team via message form.
 * As a user, I want to register an account, so I can have a pesonal account to view my profile.
 * As a user, I want to login and logout to access my personal account information.
 * As a user, I want to be able recover my password so I have access to my account.
