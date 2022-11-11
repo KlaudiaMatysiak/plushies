@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -8,9 +9,6 @@ from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from .forms import OrderForm
 from .models import Order, OrderItem
-import os
-if os.path.exists("env.py"):
-    import env
 import stripe
 import json
 
