@@ -34,7 +34,7 @@
                         <!-- Product name -->
                         <div class="col align-items-center">
                             <p class="m-0 fw-bold">{{ item.product.name }}</p>
-                            <p class="m-0 text-muted small">Size {{ item.product.size }}</p>
+                            <p class="m-0 small">Size {{ item.product.size }}</p>
                         </div>
                         <div class="col-lg-4">
                             <!-- Form to modify quantity -->
@@ -43,7 +43,7 @@
                                 <div class="form-group">
                                     <div class="input-group input-group-{{ item.item_id }}">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-outline-dark border-4 decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                            <button class="decrement-qty btn btn-outline-dark border-4 decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}" aria-label="Decrement quantity button">
                                                 <i class="fa-solid fa-circle-minus"></i>
                                             </button>
                                         </div>
@@ -51,7 +51,7 @@
                                             value="{{ item.quantity }}" min="1" max="99"
                                             data-item_id="{{ item.item_id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-outline-dark border-4 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                            <button class="increment-qty btn btn-outline-dark border-4 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}" aria-label="Increment quantity button">
                                                 <i class="fa-solid fa-circle-plus"></i>
                                             </button>
                                         </div>
@@ -90,13 +90,13 @@
                 </div>
                 <!-- Info about free delivery -->
                 {% if free_delivery_delta > 0 %}
-                <div class="mb-5 text-danger text-end">
+                <div class="mb-5 text-end">
                     Spent £{{ free_delivery_delta }} more to get free delivery!
                 </div>
                 {% endif %}
                 <!-- Checkout button -->
                 <div class="text-end">
-                    <a href="{% url 'checkout' %}" class="btn btn-outline-success rounded-4 m-1">
+                    <a href="{% url 'checkout' %}" class="btn btn-success rounded-4 m-1">
                         <span class="text-uppercase fw-bold">Secure Checkout</span>
                         <i class="fas fa-lock"></i>
                     </a>
