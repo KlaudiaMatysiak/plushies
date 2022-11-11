@@ -72,3 +72,26 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 
 ![Database](documentation/database.jpg)
 
+# Technologies Used
+##  Languages
+* HTML5
+* CSS3
+* Python
+* Javascript
+## Libraries and Programs
+* [Git](https://git-scm.com/) - Git was used for version control.
+* [GitHub](https://github.com/) - GitHub was used for storing code and deploying the site.
+* [Gitpod](https://www.gitpod.io/) - GitPod was used for building and editing my code.
+* [Heroku](https://www.heroku.com/) - Heroku was used to deploy the project.
+* [Django](https://www.djangoproject.com/) - Django was used for creating store website.
+* [PostgreSQL](https://www.postgresql.org/) - PostgreSQL was used to store products, products sizes and categories, users, user's profiles, orders colections in the database
+* [AWS S3](https://aws.amazon.com/s3/) - AWS S3 was used for storing media and static files.
+* [Stripe](https://stripe.com/en-gb) - Stripe was used for payment gateway.
+* [Bootstrap 5](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Bootstrap 5 was used to desgin responsive website.
+* [jQuery](https://jquery.com/) - jQuery was used to implement JavaScript.
+* [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - Chrome Developer Tools was used to help fix problem areas and identify bugs.
+* [Font Awesome](https://fontawesome.com/) - The icons for cookie logo, social media and buttons were taken from Font Awesome.
+* [Google Fonts](https://fonts.google.com/) - The font 'Raleway' was imported from Google Fonts.
+* [Balsamiq](https://balsamiq.com/) - Balsamiq was used to make Desktop and Mobile Wireframes.
+* [Am I Responsive?](http://ami.responsivedesign.is/#) - Website used to create mockup image for this README file.
+
