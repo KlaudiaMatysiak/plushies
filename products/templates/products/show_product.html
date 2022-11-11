@@ -20,7 +20,27 @@
             {% if request.user.is_superuser %}
             <div class="mb-3 text-end">
                 <a class="btn btn-sm btn-dark fw-bold" href="{% url 'edit_product' product.id %}">Edit</a> 
-                <a class="btn btn-sm btn-danger fw-bold" href="{% url 'delete_product' product.id %}">Delete</a>
+                <a class="btn btn-sm btn-danger fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#modal-delete-{{product.id}}">Delete</a>
+                <!-- Modal -->
+                <div class="modal fade text-center" id="modal-delete-{{product.id}}" tabindex="-1"aria-labelledby="modal-delete-{{product.id}}lLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal-delete-{{product.id}}Label">Delete Plushie</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="fs-5 m-0">Are you sure you want to delete <span class="fw-bold">{{ product.name }} {{ product.size }}</span>?</p>
+                                <br>
+                                <span class="text-muted">This action cannot be undone</span>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-dark"data-bs-dismiss="modal">Cancel</button>
+                                <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             {% endif %}
             {% if product.category %}
