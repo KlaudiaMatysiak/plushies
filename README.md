@@ -55,3 +55,15 @@ Additional information:
 ![palette](documentation/palette.jpg)
 The colors palettes for website layout are Cultured, White, and Dark Slate Grey. For the links in the Register and Login page is used Ming color.
 
+## Wireframes
+I created wireframes in the Balsamiq program as first visual concept of the website.
+
+### Mobile Wireframes
+PDF file here
+
+![Mobile Wireframes](documentation/mobile-wireframe.jpg)
+### Desktop Wireframes
+PDF file here
+
+![Desktop Wireframes](documentation/desktop-wireframes.jpg)
+
