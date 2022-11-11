@@ -1,12 +1,11 @@
 /* jshint esversion: 11 */
 // toasts
-let toastElList = [].slice.call(document.querySelectorAll('.toast'));
-let toastList = toastElList.map(function (toastEl) {
-    let option = {
+Array.from(document.querySelectorAll('.toast')).map(toastEl => {
+    const option = {
         animation: true,
         autohide: false,
         delay: 5000,
-    };
-    let bsToast = toastList(toastEl, option);
+    }
+    const bsToast = new bootstrap.Toast(toastEl, option)
     bsToast.show();
 });
