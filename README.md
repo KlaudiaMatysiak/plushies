@@ -69,7 +69,6 @@ Additional information:
 * As a user, I want to select the size and quantity of a product.
 * As a user, I want to view products in my cart and identify total cost of my purchase.
 * As a user, I want to modify the quantity of individual items in the cart, so I can make a change to my purchase before checkout.
-* As a user, I want to view items in the cart to be purchased and its total cost.
 * As a user, I want to modify the quantity of individual item in the cart, so I can easily change it before checkout.
 * As a user, I want to easily enter my payment information so I can checkout quickly.
 * As a user, I want to view on order confirmation after checkout.
