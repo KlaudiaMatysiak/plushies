@@ -7,6 +7,6 @@ let toastList = toastElList.map(function (toastEl) {
         autohide: false,
         delay: 5000,
     };
-    let bsToast = new bootstrap.Toast(toastEl, option);
+    let bsToast = toastList(toastEl, option);
     bsToast.show();
 });
