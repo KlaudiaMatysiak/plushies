@@ -95,3 +95,6 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 * [Balsamiq](https://balsamiq.com/) - Balsamiq was used to make Desktop and Mobile Wireframes.
 * [Am I Responsive?](http://ami.responsivedesign.is/#) - Website used to create mockup image for this README file.
 
+# Testing
+* The testing section is in a separate file, [here](TESTING.md).
+
