@@ -103,6 +103,28 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 
 ## Features
 ### Navbar
+The navigation bar style is consistent. It navigates user through the website. Main bar includes links to the Home, Shop, Contact, Login, Register page, Shopping Cart, and Plushies logo. While user is logged in from user icon it goes dropdown menu with two links: My Profile and Log out. As a superuser see another link on that dropdown menu, which is Admin link. While user add products, the total of the purchase will update. Above navbar there is a free delivery banner above certain amount.
+
+* Mobile
+
+    ![Feature Image](documentation/features-navbar-mobile.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-navbar-desktop.jpg)
+
+* Dropdown menu as logged out user
+
+    ![Feature Image](documentation/features-dropdown-menu-logged-out-user.jpg)
+
+* Dropdown menu as logged in user
+
+    ![Feature Image](documentation/features-dropdown-menu-logged-in-user.jpg)
+
+* Dropdown menu as logged in admin
+
+    ![Feature Image](documentation/features-dropdown-menu-admin.jpg)
+
 ### Home Page
 ### Footer
 ### Shop Page
