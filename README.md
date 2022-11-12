@@ -268,6 +268,17 @@ On the login page user can see form with username or email, password to fill in,
 
     ![Feature Image](documentation/features-login-desktop.jpg)
 
+### Logout
+On the logout page user need to confirm log out process by clicking on the Log Out button.
+
+* Mobile
+
+    ![Feature Image](documentation/features-logout-mobile.jpg)
+    
+* Desktop
+
+    ![Feature Image](documentation/features-logout-desktop.jpg)
+
 ### User Profile
 On the My Profile page user see form for deafult information that can save it for the next purchase, and also order history.
 
