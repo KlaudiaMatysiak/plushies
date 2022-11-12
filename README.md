@@ -178,8 +178,19 @@ On the shop page user can see listed plushies products. On the extra large scree
 
     ![Feature Image](documentation/features-shop-admin.jpg)
 
-
 ### Contact
+On the Contact page user see opening hours of the store, text about how to contact store staff, and message form with submit button.
+
+* Mobile
+
+    ![Feature Image](documentation/features-contact-mobile.jpg)
+    
+    ![Feature Image](documentation/features-contact-mobile-2.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-contact-desktop.jpg)
+
 ### Shopping Cart
 ### Checkout
 ### Successful checkout
