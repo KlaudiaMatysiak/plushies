@@ -315,6 +315,19 @@ On the admin page is for to add product to the store. The form has category, nam
     
     ![Feature Image](documentation/features-admin-mobile-2.jpg)
 
+#### Edit the product
+Admin can edit products. On the page is form with category, name, description, price, size, color, made in, image fields to edit the product.
+
+* Mobile
+
+    ![Feature Image](documentation/features-admin-edit-mobile.jpg)
+    
+    ![Feature Image](documentation/features-admin-edit-mobile-1.jpg)
+
+
+* Desktop
+
+    ![Feature Image](documentation/features-admin-edit-desktop.jpg)
 
 * Desktop
 
