@@ -221,8 +221,20 @@ On the checkout page user see form to fill in for contact, delivery and payment 
     
     ![Feature Image](documentation/features-checkout-desktop-2.jpg)
 
-
 ### Successful checkout
+User see Thank you title with his order number, and that confirmation email will be sent to his email. Below that message user see order details. In the bottom right corner is button to go back to browsing products.
+
+* Mobile
+
+    ![Feature Image](documentation/features-checkout-s-mobile.jpg)
+    
+    ![Feature Image](documentation/features-checkout-s-mobile-2.jpg)
+
+
+* Desktop
+
+    ![Feature Image](documentation/features-checkout-s-desktop.jpg)
+
 ### Register
 ### Verify Email
 ### Login
