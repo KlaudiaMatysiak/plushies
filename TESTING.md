@@ -414,3 +414,8 @@ in the if statement with valid form so the form outout would be empty.
     ```
     return redirect(reverse('contact'))
     ```
+
+# Testing Devices
+I tested website on the windows 11 pc with Google Chrome and Edge.
+
+I tested mobile version on the iPhone 12 Pro and iPhone12 Pro Max.
