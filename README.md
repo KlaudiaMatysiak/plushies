@@ -140,6 +140,16 @@ On the home page user see a hero image which is a grey plushie, text "Plushies a
 
 
 ### Footer
+Footer contains couple sections. General message from Plushies team, Categories links, Contact information, Disclaimer and social links with Font Awesome Icons to Facebook, Twitter, and Instagram.
+
+* Mobile
+
+    ![Feature Image](documentation/features-footer-mobile.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-footer-desktop.jpg)
+
 ### Shop Page
 ### Contact
 ### Shopping Cart
