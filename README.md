@@ -236,7 +236,7 @@ User see Thank you title with his order number, and that confirmation email will
     ![Feature Image](documentation/features-checkout-s-desktop.jpg)
 
 ### Register
-User can register an account on the website to have faster checkout process with saved profile information. On the register page is form with email address, email address confirmation, username, password, password confirmation, and register button. Above form user can find link to login page.
+User can register an account on the website to have faster checkout process with saved profile information. On the register page is form with
 ### Verify Email
 ### Login
 ### User Profile
@@ -267,7 +267,6 @@ On the history order details user can see his history of purchase with all the d
 
     ![Feature Image](documentation/features-history-desktop.jpg)
 ### Admin Page
-#### Edit the product
 On the admin page is for to add product to the store. The form has category, name, description, price, size, color, made in, image fields.
 
 * Mobile
