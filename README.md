@@ -102,7 +102,7 @@ To create database schema I used [dbdiagram.io](https://dbdiagram.io/)
 
 ## Features
 ### Navbar
-The navigation bar style is consistent. It navigates user through the website. Main bar includes links to the Home, Shop, Contact, Login, Register page, Shopping Cart, Search bar and button, and Plushies logo. While user is logged in from user icon it goes dropdown menu with two links: My Profile and Log out. As a superuser see another link on that dropdown menu, which is Admin link. While user add products, the total of the purchase will update. Above navbar there is a free delivery banner above certain amount. 
+The navigation bar style is consistent. It navigates user through the website. Main bar includes links to the Home, Shop, Contact, Login, Register page, Shopping Cart, Search bar and button, and Plushies logo. While user is logged in from user icon it goes dropdown menu with two links: My Profile and Log out. As a superuser see another link on that dropdown menu, which is Admin link. While user add products, the total of the purchase will update. Above navbar there is a free delivery banner above certain amount. User can search on the search bar for products, the query search by product's name and color.
 
 * Mobile
 
@@ -125,6 +125,10 @@ The navigation bar style is consistent. It navigates user through the website. M
 * Dropdown menu as logged in admin
 
     ![Feature Image](documentation/features-dropdown-menu-admin.jpg)
+
+* Output for searching queries
+
+    ![Feature Image](documentation/features-searching.jpg)
 
 ### Home Page
 On the home page user see a hero image which is a grey plushie, text "Plushies are the great companions Love Laugh Fun", and SHOP NOW button. In the next section there is High Quality header, text and image. On the mobile view content is centered. On the desktop view Hero Image is positioned on the right and hero text is on the left, and splitted into two halfs. High Quality image is positioned on the left and its text on the right, and splitted with 8/12 and 4/12.
