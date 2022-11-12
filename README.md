@@ -335,6 +335,11 @@ Admin can edit products. On the page is form with category, name, description, p
 
     ![Feature Image](documentation/features-admin-desktop.jpg)
 
+#### Delete modal for admin
+Admin can see delete modal. On the model there is a confirmation for the delete process.
+
+![Feature Image](documentation/features-admin-delete.jpg)
+
 ### Messages
 User can notice success message with transparent background, error message with red background, and information message with blue background. Messages notify user about action being made on the website.
 
