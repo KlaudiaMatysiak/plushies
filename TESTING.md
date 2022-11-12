@@ -330,3 +330,59 @@ I used [Code Institue pep8ish Validator](https://pep8ish.herokuapp.com/) to vali
 <details><summary>Add-product</summary>
 <img src="documentation/lighthouse-add.png">
 </details>
+
+# Bugs
+
+1. Images not loading on the page
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-1.jpg">
+    </details>
+    To fix this problem I needed to add
+
+    ```'django.template.context_processors.media'```
+
+    to the settings.py in the TEMPLATES
+
+2. Layout issues with icons in the navbar on the mobile view
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-2.jpg">
+    </details>
+    To fix it I needed to find elements that had extra paddings and marings, and change it.
+
+3. Layout issues with icons in the navbar on the mobile view
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-3.jpg">
+    </details>
+    The problem here was with icons elements being nested in the wrong parent element, so I needed to move out of div with classes: collapse, navbar-collapse.
+
+4. Layout issues with dropdown menu in the navbar on the mobile view
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-4.jpg">
+    </details>
+    I fixed the problem with adding class 'position-absolute' on the unorder list element with class 'dropdown-menu'.
+
+5. Layout issues with extra space on the right of the screen.
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-5.jpg">
+    </details>
+    I fixed the problem by wrapping a free delivery banner element with div with class 'container-fluid'.
+
+6. Could not make migrations for the profiles app. ModuleNotFoundError: No module names 'progiles'
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-6.jpg">
+    </details>
+    A quick fix of changing a typo made in the settings.py in the INSTALLED_APPS. I change 'progiles' for 'profiles'.
+
+7. Could not load shop page. NameError at /shop/
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-7.jpg">
+    </details>
+    I fixed the problem with importing Product Model in the begning of the views.py.
+
+8. Could not sort products. ProgrammingError at /shop/
+    <details><summary>Screenshot</summary>
+    <img src="documentation/bug-8.jpg">
+    </details>
+    On this bug I spent a lot of time. I get products objects by distinct to not duplicate same products on the shop page but I could not sort on that. So I need to get all objects and sort and then filter and distinct them. I find the way to work out the syntax for that:
+
+    ``` products = products.filter(id__in=Product.objects.order_by('name', 'price').distinct('name')).order_by(sortkey) ```
