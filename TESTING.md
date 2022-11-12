@@ -1,5 +1,5 @@
 # Plushies - Testing
-## User Stories
+# Manual Testing of the User Stories
 User Story | Testing | Pass
 --- | --- | :---:
 As a user<br> I want to view a list of products to purchase. | As a user on the Home page I navigate to the Shop -> All Plushies to see all products or choose category that I'm interesed in. | :heavy_check_mark:
