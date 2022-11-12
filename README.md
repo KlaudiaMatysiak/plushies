@@ -282,6 +282,8 @@ On the admin page is for to add product to the store. The form has category, nam
     ![Feature Image](documentation/features-admin-desktop.jpg)
 
 ### Messages
+User can notice success message with transparent background, error message with red background, and information message with blue background. Messages notify user about action being made on the website.
+
 
 # Technologies Used
 ##  Languages
