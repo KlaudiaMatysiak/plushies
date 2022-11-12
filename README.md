@@ -258,6 +258,16 @@ On the verify email page user can read information to check his email box to con
     ![Feature Image](documentation/features-verify-desktop.jpg)
 
 ### Login
+On the login page user can see form with username or email, password to fill in, and login button. Use has option to stay logged in. by clicking Remember Me box. Above form there is link to registration page. User also has option to retrieve account if forgot the password.
+
+* Mobile
+
+    ![Feature Image](documentation/features-login-mobile.jpg)
+    
+* Desktop
+
+    ![Feature Image](documentation/features-login-desktop.jpg)
+
 ### User Profile
 On the My Profile page user see form for deafult information that can save it for the next purchase, and also order history.
 
