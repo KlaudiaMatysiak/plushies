@@ -554,3 +554,7 @@ User can notice success message with transparent background, error message with 
 |[Click here](https://www.campusgifts.co.uk/product/jellycat-vivacious-vegetable-broccoli?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1KmhML4afi62a4kMRWsZDHpYx_UNc5zFWvr4pzeDPE2pJzX8cirkXxoCrNkQAvD_BwE)| Broccoli Plushie |
 |[Click here](https://www.campusgifts.co.uk/product/jellycat-amuseable-avocado-small?gclid=CjwKCAiAvK2bBhB8EiwAZUbP1OJYbLI2OhSoV1fn48A6Gt9AzDz5cSkTdwIXOB5PCLuhyx6ngpeDlhoCLpAQAvD_BwE)| Avocado Plushie |
 |[Click here](https://www.google.com/shopping/product/9910092399480056401?q=Plushies+food&rlz=1C1ONGR_en-GBGB992GB992&sxsrf=ALiCzsbGEVhtYhLhH0DyXw-FAHCRh3iz_A:1668031777914&biw=1920&bih=961&dpr=1&prds=eto:10209888280867773364_0,pid:1792594186089744155&sa=X&ved=0ahUKEwie3qXbjqL7AhWWEMAKHUuzCGgQ8gIIoAooAA)| Ice Cream Plushie |
+
+## Code
+* Code was inspired by Project - Boutique Ado by Chris Zielinski.
+* Layout for footer was from [mdbootstrap](https://mdbootstrap.com/snippets/standard/mdbootstrap/2885027?view=side)
