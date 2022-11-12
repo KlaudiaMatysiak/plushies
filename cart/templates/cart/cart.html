@@ -113,8 +113,10 @@
     </div>
     <!-- Empty cart -->
     {% else %}
+    <div class="text-center">
         <p class="mb-4">You cart is empty.</p>
         <a href="{% url 'shop' %}" class="btn btn-outline-dark rounded-4 btn-lg">Keep shopping</a>
+    </div>
     {% endif %}
 </div>
 {% endblock %}
