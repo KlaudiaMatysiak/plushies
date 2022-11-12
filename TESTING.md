@@ -103,3 +103,30 @@ I used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to validate my css
 <details><summary>profile.css</summary>
 <img src="documentation/css-validation-profile-css.jpg">
 </details>
+
+## JavaScript Validation
+I used [JSHint Validator](https://jshint.com/) to validate my javascript code. I validate by direct input.
+
+<details><summary>Base</summary>
+<img src="documentation/js-validation-base.jpg">
+</details>
+
+<details><summary>Cart</summary>
+<img src="documentation/js-validation-cart.jpg">
+</details>
+
+<details><summary>Checkout</summary>
+<img src="documentation/js-validation-checkout.jpg">
+</details>
+
+<details><summary>Products</summary>
+<img src="documentation/js-validation-products.jpg">
+</details>
+
+<details><summary>Products Quantity</summary>
+<img src="documentation/js-validation-products-quantity.jpg">
+</details>
+
+<details><summary>Profiles</summary>
+<img src="documentation/js-validation-profiles.jpg">
+</details>
