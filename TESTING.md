@@ -269,3 +269,64 @@ I used [Code Institue pep8ish Validator](https://pep8ish.herokuapp.com/) to vali
 <details><summary>Views</summary>
 <img src="documentation/python-validation-profiles-views.jpg">
 </details>
+
+# Lighthouse Testing
+<details><summary>Home</summary>
+<img src="documentation/lighthouse-home.png">
+</details>
+
+<details><summary>Shop - All Categories</summary>
+<img src="documentation/lighthouse-shop.png">
+</details>
+
+<details><summary>Food Plushies</summary>
+<img src="documentation/lighthouse-food-plushies.png">
+</details>
+
+<details><summary>Gaming Plushies</summary>
+<img src="documentation/lighthouse-gaming-plushies.png">
+</details>
+
+<details><summary>Animals Plushing</summary>
+<img src="documentation/lighthouse-animals-plushies.png">
+</details>
+
+<details><summary>Contact</summary>
+<img src="documentation/lighthouse-contact.png">
+</details>
+
+<details><summary>Cart</summary>
+<img src="documentation/lighthouse-cart.png">
+</details>
+
+<details><summary>Checkout</summary>
+<img src="documentation/lighthouse-checkout.png">
+</details>
+
+<details><summary>Checkout Success</summary>
+<img src="documentation/lighthouse-checkout-success.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="documentation/lighthouse-register.png">
+</details>
+
+<details><summary>Log In</summary>
+<img src="documentation/lighthouse-login.png">
+</details>
+
+<details><summary>Log Out</summary>
+<img src="documentation/lighthouse-logout.png">
+</details>
+
+<details><summary>Profile</summary>
+<img src="documentation/lighthouse-profile.png">
+</details>
+
+<details><summary>Order History</summary>
+<img src="documentation/lighthouse-order-history.png">
+</details>
+
+<details><summary>Add-product</summary>
+<img src="documentation/lighthouse-add.png">
+</details>
