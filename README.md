@@ -247,6 +247,16 @@ User can register an account on the website to have faster checkout process with
     ![Feature Image](documentation/features-register-desktop.jpg)
 
 ### Verify Email
+On the verify email page user can read information to check his email box to continue registration account, and notification pops up.
+
+* Mobile
+
+    ![Feature Image](documentation/features-verify-mobile.jpg)
+    
+* Desktop
+
+    ![Feature Image](documentation/features-verify-desktop.jpg)
+
 ### Login
 ### User Profile
 On the My Profile page user see form for deafult information that can save it for the next purchase, and also order history.
