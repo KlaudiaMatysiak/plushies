@@ -89,3 +89,17 @@ I used [HTML5 Validator](https://validator.w3.org/) to validate my html code. I 
 <img src="documentation/html-validation-add-product.jpg">
 </details>
 
+## CSS3 Validation
+I used [CSS3 Validator](https://jigsaw.w3.org/css-validator/) to validate my css code. I validate by file upload.
+
+<details><summary>base.css</summary>
+<img src="documentation/css-validation-base-css.jpg">
+</details>
+
+<details><summary>checkout.css</summary>
+<img src="documentation/css-validation-checkout-css.jpg">
+</details>
+
+<details><summary>profile.css</summary>
+<img src="documentation/css-validation-profile-css.jpg">
+</details>
