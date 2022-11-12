@@ -126,6 +126,19 @@ The navigation bar style is consistent. It navigates user through the website. M
     ![Feature Image](documentation/features-dropdown-menu-admin.jpg)
 
 ### Home Page
+On the home page user see a hero image which is a grey plushie, text "Plushies are the great companions Love Laugh Fun", and SHOP NOW button. In the next section there is High Quality header, text and image. On the mobile view content is centered. On the desktop view Hero Image is positioned on the right and hero text is on the left, and splitted into two halfs. High Quality image is positioned on the left and its text on the right, and splitted with 8/12 and 4/12.
+
+* Mobile
+
+    ![Feature Image](documentation/features-home-mobile.jpg)
+
+    ![Feature Image](documentation/features-home-mobile-2.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-home-desktop.jpg)
+
+
 ### Footer
 ### Shop Page
 ### Contact
