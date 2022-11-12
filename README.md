@@ -93,10 +93,12 @@ I created wireframes in the Balsamiq program as first visual concept of the webs
 
 ### Mobile Wireframes
 [PDF file here](documentation/mobile-wireframes.pdf)
+[PDF](/documentation/mobile-wireframes.pdf)
 
 ![Mobile Wireframes](documentation/mobile-wireframe.jpg)
 ### Desktop Wireframes
 [PDF file here](documentation/desktop-wireframes.pdf)
+[PDF](/documentation/desktop-wireframes.pdf)
 
 ![Desktop Wireframes](documentation/desktop-wireframes.jpg)
 
