@@ -156,6 +156,29 @@ Footer contains couple sections. General message from Plushies team, Categories 
     ![Feature Image](documentation/features-footer-desktop.jpg)
 
 ### Shop Page
+On the shop page user can see listed plushies products. On the extra large screens are four products in the row, on the large screens are three products in the row, on the medium screens are two products in the row, and on the small screens is one product in the row. Every product is placed on the tile that contains product's image, name, starting price and category. User can open link for details of the chosen product by clicking either image or name. User can sort products by price, by name, by category name. On the menu are oprtions to display products only from one category, and on that page user can sort products by price, and by name from one category. Admin can see also buttons for editing and deleting the product. On the bottom of the screen is placed the fixed button, that can take user to the top of the page.
+
+* Mobile
+
+    ![Feature Image](documentation/features-shop-mobile.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-shop-desktop.jpg)
+
+* Sorting
+
+    ![Feature Image](documentation/features-shop-sorting.jpg)
+
+* Fixed button
+
+    ![Feature Image](documentation/features-shop-fixed-button.jpg)
+
+* Admin view
+
+    ![Feature Image](documentation/features-shop-admin.jpg)
+
+
 ### Contact
 ### Shopping Cart
 ### Checkout
