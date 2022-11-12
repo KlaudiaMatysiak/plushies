@@ -207,6 +207,21 @@ If user doesn't add any products, the content of the cart is text 'Your cart is 
     ![Feature Image](documentation/features-shcart-empty.jpg)
 
 ### Checkout
+On the checkout page user see form to fill in for contact, delivery and payment details, order summary, and buttons to return to cart and to complete the order. On the form required field are full name, email, phone number, street line 1, city, country, and payment.
+
+* Mobile
+
+    ![Feature Image](documentation/features-checkout-mobile.jpg)
+
+    ![Feature Image](documentation/features-checkout-mobile-2.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-checkout-desktop.jpg)
+    
+    ![Feature Image](documentation/features-checkout-desktop-2.jpg)
+
+
 ### Successful checkout
 ### Register
 ### Verify Email
