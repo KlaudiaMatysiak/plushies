@@ -26,4 +26,66 @@ As a store owner<br> I want to add product to my store. | As a store owner, once
 As a store owner<br> I want to edit details product. | As a store owner I can edit products on the shop page or in the product's details page by clicking the edit button. It redirects me to the edit page with notification of what Product I am editing. I can change any field and click button to update the chosen product. | :heavy_check_mark:
 As a store owner<br> I want to delete a products that are no longer for sale. | As a store owner I can delete products on the shop page or in the product's details page by clicking the delete button. I can see pop up information if I am sute to delete chosen product, and I can choose to cancel or delete it. It redirects me to the shop page with notification 'Product deleted!'. | :heavy_check_mark:
 
+# Code Validation
+## HTML5 Validation
+I used [HTML5 Validator](https://validator.w3.org/) to validate my html code. I validate by URI and by Direct Input.
+<details><summary>Home</summary>
+<img src="documentation/html-validation-home.jpg">
+</details>
+
+<details><summary>Shop - All Categories</summary>
+<img src="documentation/html-validation-shop.jpg">
+</details>
+
+<details><summary>Food Plushies</summary>
+<img src="documentation/html-validation-food-plushies.jpg">
+</details>
+
+<details><summary>Gaming Plushies</summary>
+<img src="documentation/html-validation-gaming-plushies.jpg">
+</details>
+
+<details><summary>Animales Plushing</summary>
+<img src="documentation/html-validation-animales-plushing.jpg">
+</details>
+
+<details><summary>Contact</summary>
+<img src="documentation/html-validation-contact.jpg">
+</details>
+
+<details><summary>Cart</summary>
+<img src="documentation/html-validation-cart.jpg">
+</details>
+
+<details><summary>Checkout</summary>
+<img src="documentation/html-validation-checkout.jpg">
+</details>
+
+<details><summary>Checkout Success</summary>
+<img src="documentation/html-validation-checkout-success.jpg">
+</details>
+
+<details><summary>Register</summary>
+<img src="documentation/html-validation-register.jpg">
+</details>
+
+<details><summary>Log In</summary>
+<img src="documentation/html-validation-login.jpg">
+</details>
+
+<details><summary>Log Out</summary>
+<img src="documentation/html-validation-logout.jpg">
+</details>
+
+<details><summary>Profile</summary>
+<img src="documentation/html-validation-profile.jpg">
+</details>
+
+<details><summary>Order History</summary>
+<img src="documentation/html-validation-order-history.jpg">
+</details>
+
+<details><summary>Add-product</summary>
+<img src="documentation/html-validation-add-product.jpg">
+</details>
 
