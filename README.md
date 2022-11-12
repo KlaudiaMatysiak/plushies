@@ -36,7 +36,7 @@
 * [Credits](#credits)
 
 # Introduction
-[Mockup](documentation/mockup.png)
+![Mockup](documentation/mockup.png)
 
 The live project you can find [here](https://plushies.herokuapp.com)
 
