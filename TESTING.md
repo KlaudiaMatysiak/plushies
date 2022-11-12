@@ -337,9 +337,11 @@ I used [Code Institue pep8ish Validator](https://pep8ish.herokuapp.com/) to vali
     <details><summary>Screenshot</summary>
     <img src="documentation/bug-1.jpg">
     </details>
-    To fix this problem I needed to add
+    To fix this problem I needed to add:
 
-    ```'django.template.context_processors.media'```
+    ```
+    'django.template.context_processors.media'
+    ```
 
     to the settings.py in the TEMPLATES
 
@@ -385,4 +387,30 @@ I used [Code Institue pep8ish Validator](https://pep8ish.herokuapp.com/) to vali
     </details>
     On this bug I spent a lot of time. I get products objects by distinct to not duplicate same products on the shop page but I could not sort on that. So I need to get all objects and sort and then filter and distinct them. I find the way to work out the syntax for that:
 
-    ``` products = products.filter(id__in=Product.objects.order_by('name', 'price').distinct('name')).order_by(sortkey) ```
+    ```
+    products = products.filter(id__in=Product.objects.order_by('name', 'price').distinct('name')).order_by(sortkey)
+    ```
+
+9. User could submit empty message form on the contact page. That cause bug in the django admin panel, because admin could not delete message None. To fix that I added str() method in the return:
+
+    ```
+    def __str__(self):
+        return str(self.name)
+    ```
+    To prevent in the future submiting empty forms I added requied attribute on all message form's fields. In the for loop in the forms.py I added:
+
+    ```
+    self.fields[field].widget.attrs['required'] = 'required'
+    ```
+
+10. After submiting the message form on the contact page, the form contained still last submited output. To fix that I added in the contact function in the views.py
+    ```
+    contact_form = ContactForm()
+    ```
+
+in the if statement with valid form so the form outout would be empty.
+
+11. Every time user clicked refresh page after submiting the message form on the contact page, the form would send for every click. To fix that I added return in the views.py in the contact function:
+    ```
+    return redirect(reverse('contact'))
+    ```
