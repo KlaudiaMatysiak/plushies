@@ -370,7 +370,7 @@ User can notice success message with transparent background, error message with 
 * [Font Awesome](https://fontawesome.com/) - The icons for cookie logo, social media and buttons were taken from Font Awesome.
 * [Google Fonts](https://fonts.google.com/) - The font 'Raleway' was imported from Google Fonts.
 * [Balsamiq](https://balsamiq.com/) - Balsamiq was used to make Desktop and Mobile Wireframes.
-* [Am I Responsive?](http://ami.responsivedesign.is/#) - Website used to create mockup image for this README file.
+* [Photopea](https://www.photopea.com/) - Programm used to create mockup image for this README file.
 
 # Testing
 * The testing section is in a separate file, [here](TESTING.md).
