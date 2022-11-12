@@ -38,8 +38,7 @@
 # Introduction
 The live project you can find [here](https://plushies.herokuapp.com)
 
-It is the final project for the 'Full Stack Frameworks with Django' module at Code Institute. The Plushies project is an eCommerce shop that is offering to sell plushies.
-Please note that this website is for eductional purposes. Do not enter any personal credit/debit card details.
+The Plushies project is an eCommerce store with plushies. The site is designed within Django structure, deployed on Heroku, utilizes cloud storage AWS S3 to host media and static records. The website provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation and full CRUD functionality for admin users for Products. Please note that this website is for eductional purposes only. Do not enter any personal credit/debit card details. 
 
 ## Testing Payment with Stripe
 As a way of exemplifying how the payment functionality works, Stripe provides three types of payment events and their respective card numbers: successful payment, requires authentication and failed payment.
