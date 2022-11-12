@@ -236,6 +236,7 @@ User see Thank you title with his order number, and that confirmation email will
     ![Feature Image](documentation/features-checkout-s-desktop.jpg)
 
 ### Register
+User can register an account on the website to have faster checkout process with saved profile information. On the register page is form with email address, email address confirmation, username, password, password confirmation, and register button. Above form user can find link to login page.
 ### Verify Email
 ### Login
 ### User Profile
