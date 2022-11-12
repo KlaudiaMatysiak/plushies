@@ -192,6 +192,20 @@ On the Contact page user see opening hours of the store, text about how to conta
     ![Feature Image](documentation/features-contact-desktop.jpg)
 
 ### Shopping Cart
+If user doesn't add any products, the content of the cart is text 'Your cart is empty' with Keep Shopping button. If user add products to the shopping cart, it displays list of products. Every item in the cart has image, name, size, buttons to change quantity, price and delete from cart button. Beneath products list user can find total of the purchase along with button for secure checkout, or button to keep shopping.
+
+* Mobile
+
+    ![Feature Image](documentation/features-shcart-mobile.jpg)
+
+* Desktop
+
+    ![Feature Image](documentation/features-shcart-desktop.jpg)
+
+* Empty Cart
+
+    ![Feature Image](documentation/features-shcart-empty.jpg)
+
 ### Checkout
 ### Successful checkout
 ### Register
