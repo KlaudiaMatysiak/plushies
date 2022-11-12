@@ -254,6 +254,18 @@ On the My Profile page user see form for deafult information that can save it fo
     ![Feature Image](documentation/features-profile-desktop.jpg)
 
 ### History order details
+On the history order details user can see his history of purchase with all the details, and back to profile button.
+
+* Mobile
+
+    ![Feature Image](documentation/features-history-mobile.jpg)
+    
+    ![Feature Image](documentation/features-history-mobile-1.jpg)
+
+
+* Desktop
+
+    ![Feature Image](documentation/features-history-desktop.jpg)
 ### Admin Page
 ### Messages
 
