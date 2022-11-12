@@ -267,6 +267,20 @@ On the history order details user can see his history of purchase with all the d
 
     ![Feature Image](documentation/features-history-desktop.jpg)
 ### Admin Page
+#### Edit the product
+On the admin page is for to add product to the store. The form has category, name, description, price, size, color, made in, image fields.
+
+* Mobile
+
+    ![Feature Image](documentation/features-admin-mobile.jpg)
+    
+    ![Feature Image](documentation/features-admin-mobile-2.jpg)
+
+
+* Desktop
+
+    ![Feature Image](documentation/features-admin-desktop.jpg)
+
 ### Messages
 
 # Technologies Used
