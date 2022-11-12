@@ -240,6 +240,19 @@ User can register an account on the website to have faster checkout process with
 ### Verify Email
 ### Login
 ### User Profile
+On the My Profile page user see form for deafult information that can save it for the next purchase, and also order history.
+
+* Mobile
+
+    ![Feature Image](documentation/features-profile-mobile.jpg)
+    
+    ![Feature Image](documentation/features-profile-mobile-2.jpg)
+
+
+* Desktop
+
+    ![Feature Image](documentation/features-profile-desktop.jpg)
+
 ### History order details
 ### Admin Page
 ### Messages
