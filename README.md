@@ -38,7 +38,7 @@
 # Introduction
 ![Mockup](documentation/mockup.png)
 
-The live project you can find [here](https://plushies.herokuapp.com)
+~~The live project you can find [here](https://plushies.herokuapp.com)~~ Currently (from 2024) aws s3 bucket is turned off
 
 The Plushies project is an eCommerce store with plushies. The site is designed within Django structure, deployed on Heroku, utilizes cloud storage AWS S3 to host media and static records. The website provides role based permissions for users to interact with a central dataset. It includes user authentication, email validation and full CRUD functionality for admin users for Products. Please note that this website is for eductional purposes only. Do not enter any personal credit/debit card details. 
 
